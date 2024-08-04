@@ -70,7 +70,7 @@ import { incrementquantity, decrementquantity,removeFromCart } from "../Redux/Ca
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.fullcart);
   const dispatch = useDispatch();
-  const deliveryFees = 10;
+  const deliveryFees = 1;
 
   const subtotal = useMemo(() => {
     return cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
