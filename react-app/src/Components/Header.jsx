@@ -13,7 +13,7 @@ const Header = () => {
     <header className="header">
       <h2>EduVoyage</h2>
       <nav className="nav">
-        <Link to="/"><h3>Home</h3></Link>
+        <Link to="/home"><h3>Home</h3></Link>
         <Link to="/about"><h3>About</h3></Link>
         <Link to="/cart"><h3>Cart: {cartlength}</h3></Link>
       </nav>

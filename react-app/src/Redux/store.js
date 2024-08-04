@@ -19,6 +19,7 @@ import formReducer from './formSlice';
 import cartReducer from './CartSlice';
 import searchReducer from './SearchSlice';
 import buyReducer from './BuySlice';
+import userReducer from './UserSlice';
 
 const store = configureStore({
   reducer: {
@@ -26,6 +27,7 @@ const store = configureStore({
     cart: cartReducer,
     search: searchReducer,
     buy: buyReducer,
+    user: userReducer,
   },
 });
 
