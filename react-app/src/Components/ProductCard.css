@@ -1,0 +1,174 @@
+:root {
+    --background-color: #ece0e8;
+    --color-primary-light: #ca3782;
+    --color-primary-dark: #1e0b36;
+    --color-black: #000;
+    --color-gray-dark: #aaa;
+    --color-gray-light: #eee;
+    --color-white: #fff;
+}
+
+/* Mixins (converted to utility classes) */
+.absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flexCenter {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Reset */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 10px as 1rem */
+    font-size: 62.5%;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 56.25%; /* 1rem = 9px, 9/16 = 56.25 */
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 50%; /* 1rem = 8px, 8/16 = 50 */
+    }
+}
+
+@media (min-width: 1800px) {
+    html {
+        font-size: 75%; /* 1rem = 12px, 12/16 = 75 */
+    }
+}
+
+body {
+    height: 100vh;
+    background-image: url("https://files.123freevectors.com/wp-content/original/131391-light-blue-polygon-pattern-abstract-background.jpg");
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 150px;
+    margin-right: 150px;
+    justify-content: center;
+}
+
+.box {
+    perspective: 1000px;
+    margin: 20px;
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.card__side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #f7f5f5;
+    border-radius: 8px;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #f2f2f8;
+}
+
+.card__side--front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__side--back {
+    transform: rotateY(180deg);
+}
+
+.box:hover .card {
+    transform: rotateY(180deg);
+}
+
+.image img {
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.des1, .des2 {
+    margin-top: 10px;
+}
+
+.des1 h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.des1 h3 {
+    font-size: 14px;
+    color: #070707;
+    margin: 5px 0 0;
+}
+
+.des2 h4 {
+    font-size: 16px;
+    color: #f39c12;
+    margin: 0;
+}
+
+.des2 p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: var(--color-primary-light);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+
+.cart button:hover {
+    background: var(--color-primary-dark);
+}
+
+.products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+

@@ -1,0 +1,148 @@
+ /* body {
+    background-image: url("https://files.123freevectors.com/wp-content/original/131391-light-blue-polygon-pattern-abstract-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product-grid
+{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 150px;
+    margin-right: 150px;
+    justify-content:center;
+}
+.box {
+    border: 1px solid #f7f5f5;
+    border-radius: 8px;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #f2f2f8;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 8px rgba(2, 6, 228, 0.2);
+}
+
+.image img {
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.des1, .des2 {
+    margin-top: 10px;
+}
+
+.des1 h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.des1 h3 {
+    font-size: 14px;
+    color: #070707;
+    margin: 5px 0 0;
+}
+
+.des2 h4 {
+    font-size: 16px;
+    color: #f39c12;
+    margin: 0;
+}
+
+.des2 p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 5px;
+}
+.products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+   
+
+
+    */
+
+  
+    :root {
+        --background-color: #ece0e8;
+        --color-primary-light: #ca3782;
+        --color-primary-dark: #1e0b36;
+        --color-black: #000;
+        --color-gray-dark: #aaa;
+        --color-gray-light: #eee;
+        --color-white: #fff;
+    }
+    
+    /* Reset */
+    *,
+    *::after,
+    *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    @media (max-width: 1200px) {
+        html {
+            font-size: 56.25%;
+        }
+    }
+    
+    @media (max-width: 900px) {
+        html {
+            font-size: 50%;
+        }
+    }
+    
+    @media (min-width: 1800px) {
+        html {
+            font-size: 75%;
+        }
+    }
+    
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .products-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .searchbar {
+        margin-bottom: 20px;
+    }
+    
+    .searchinput {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 300px;
+    }
+    
+    .product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    

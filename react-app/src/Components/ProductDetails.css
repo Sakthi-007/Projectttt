@@ -1,0 +1,16 @@
+/* ProductDetails.css */
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .product-img {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .product-info {
+    text-align: center;
+  }
