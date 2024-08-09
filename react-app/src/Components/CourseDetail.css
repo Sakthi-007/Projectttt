@@ -1,0 +1,117 @@
+/* CourseDetail.css */
+
+.course-detail-container {
+    background-color: #f4f4f9;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.course-detail-info {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.course-detail-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--color-gray-light);
+}
+
+.course-detail-text {
+    max-width: 600px;
+}
+
+.course-detail-text h2 {
+    font-size: 2rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 10px;
+}
+
+.course-detail-text p {
+    font-size: 1.2rem;
+    color: var(--color-gray-dark);
+    margin-bottom: 10px;
+}
+
+.course-detail-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-primary-light);
+    margin-bottom: 10px;
+}
+
+.course-detail-rating {
+    font-size: 1rem;
+    color: var(--color-gray-dark);
+}
+
+.course-detail-video {
+    text-align: center;
+}
+
+.course-detail-video iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 8px;
+}
+/* Mycourses.css */
+.mycourses-container {
+    padding: 20px;
+  }
+  
+  .mycourses-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between grid items */
+    justify-content: center;
+  }
+  
+  .mycourses-item {
+    width: 300px; /* Adjust the width as needed */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .mycourses-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent */
+    display: block; /* Ensure the link takes up the entire box */
+  }
+  
+  .mycourses-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .mycourses-details {
+    padding: 15px;
+  }
+  
+  .mycourses-details h3 {
+    margin-top: 0;
+    font-size: 24px; /* Increased font size */
+  }
+  
+  .mycourses-details p {
+    font-size: 18px; /* Increased font size */
+  }
+  
+  .mycourses-price {
+    font-size: 20px; /* Increased font size */
+    font-weight: bold;
+  }
+  
+  .mycourses-rating {
+    font-size: 16px; /* Increased font size */
+    color: #777;
+  }
+  

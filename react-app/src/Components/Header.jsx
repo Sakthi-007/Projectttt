@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { useSelector } from "react-redux";
 import "./Header.css";
@@ -15,6 +13,8 @@ const Header = () => {
       <nav className="nav">
         <Link to="/home"><h3>Home</h3></Link>
         <Link to="/about"><h3>About</h3></Link>
+        <Link to="/wishlist"><h3>Wishlist</h3></Link>
+        <Link to="/mycourses"><h3>My Courses</h3></Link>
         <Link to="/cart"><h3>Cart: {cartlength}</h3></Link>
       </nav>
     </header>
@@ -22,4 +22,3 @@ const Header = () => {
 };
 
 export default Header;
-
