@@ -46,7 +46,8 @@ export const PRODUCTS = [
         "rating": {
             "rate": 4.6,
             "count": 1700
-        }
+        },
+        videoUrl: 'https://www.youtube.com/embed/osVm6UrwEYc', 
     },
     {
       "id": 5,
@@ -58,7 +59,8 @@ export const PRODUCTS = [
         "rating": {
             "rate": 4.4,
             "count": 1200
-        }
+        },
+        videoUrl:'https://www.youtube.com/embed/3RTqLQ1MaQU'
     },
     {
       "id": 6,
@@ -70,7 +72,8 @@ export const PRODUCTS = [
         "rating": {
             "rate": 4.7,
             "count": 2500
-        }
+        },
+        videoUrl:'https://www.youtube.com/embed/GwIo3gDZCVQ'
     },
     {
       "id": 7,

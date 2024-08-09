@@ -69,10 +69,13 @@ import Cart from './Components/Cart';
 import About from './Components/About';
 import Buy from './Components/Buy';
 import Search from './Components/Search';
+import CourseDetail from './Components/CourseDetail'; 
 import ProductDetails from './Components/ProductDetails';
 import Admin from './Components/admin';
 import { PRODUCTS } from './constants';
 import { ToastContainer } from 'react-toastify';
+import Wishlist from './Components/Wishlist';
+import MyCourses from './Components/Mycourses';
 import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
@@ -105,6 +108,9 @@ const App = () => {
         <Route path="/buy" element={<Buy />} />
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/mycourses" element={<MyCourses />} />
+        <Route path="/course/:id" element={<CourseDetail />} />
       </Routes>
       <ToastContainer />
     </>
