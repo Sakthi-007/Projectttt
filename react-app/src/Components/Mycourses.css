@@ -1,0 +1,106 @@
+/* MyCourses.css */
+
+:root {
+    --background-color: #f4f4f900;
+    --color-primary-light: #4a90e2;
+    --color-primary-dark: #0056b3;
+    --color-white: #fff;
+    --color-gray-dark: #333;
+    --color-gray-light: #f9f9f9;
+}
+
+/* Container for the whole section */
+.mycourses-container {
+    background-color: var(--background-color);
+    padding: 40px;
+    text-align: center;
+}
+
+/* Heading style */
+.mycourses-container h2 {
+    font-size: 2.5rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 20px;
+}
+
+/* Grid container */
+.mycourses-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual item styling */
+.mycourses-item {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for items */
+.mycourses-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image style */
+.mycourses-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--color-gray-light);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Details section style */
+.mycourses-details {
+    padding: 15px;
+}
+
+/* Title style */
+.mycourses-details h3 {
+    font-size: 1.5rem;
+    color: var(--color-primary-dark);
+    margin: 0 0 10px;
+}
+
+/* Description style */
+.mycourses-details p {
+    font-size: 1rem;
+    color: var(--color-gray-dark);
+    margin: 0 0 10px;
+}
+
+/* Price style */
+.mycourses-price {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-primary-light);
+    margin-bottom: 10px;
+}
+
+/* Rating style */
+.mycourses-rating {
+    font-size: 0.9rem;
+    color: var(--color-gray-dark);
+}
+/* In your CSS file */
+.mycourses-tab {
+    text-decoration: none; /* Removes underline */
+    color: var(--color-primary-light); /* Optional: change text color */
+}
+
+.mycourses-tab:hover {
+    color: var(--color-primary-dark); /* Optional: change color on hover */
+}
+.mycourses-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent */
+    display: block; /* Ensure the link takes up the entire box */
+  }
