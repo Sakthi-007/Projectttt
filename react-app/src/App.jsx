@@ -77,7 +77,7 @@ import { ToastContainer } from 'react-toastify';
 import Wishlist from './Components/Wishlist';
 import MyCourses from './Components/Mycourses';
 import 'react-toastify/dist/ReactToastify.css';
-
+import Checkout from './Components/Checkout'
 const App = () => {
   const [cart, setCart] = useState([]);
   const location = useLocation();
@@ -111,6 +111,8 @@ const App = () => {
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/mycourses" element={<MyCourses />} />
         <Route path="/course/:id" element={<CourseDetail />} />
+        <Route path="/checkout" element={<Checkout />} />
+
       </Routes>
       <ToastContainer />
     </>

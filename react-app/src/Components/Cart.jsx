@@ -66,10 +66,13 @@ import { useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./Cart.css";
 import { incrementquantity, decrementquantity,removeFromCart } from "../Redux/CartSlice";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.fullcart);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const deliveryFees = 1;
 
   const subtotal = useMemo(() => {
@@ -82,6 +85,9 @@ const Cart = () => {
 
   const handleRemove = (item) => {
     dispatch(removeFromCart(item));
+  };
+  const handleCheckout = () => {
+    navigate("/checkout");
   };
 
   return (
@@ -118,7 +124,7 @@ const Cart = () => {
           <p className="price">Subtotal: {subtotal.toFixed(2)}</p>
           <p>Delivery fee: {deliveryFees}</p>
           <p className="total">Total: {total.toFixed(2)}</p>
-          <button className="checkout-button">Checkout</button>
+          <button className="checkout-button" onClick={handleCheckout}>Checkout</button>
         </div>
       </div>
     </>

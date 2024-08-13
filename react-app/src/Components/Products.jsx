@@ -86,11 +86,12 @@
 
 // export default Products;
 // src/Components/Products.jsx
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { setSearchTerm } from '../Redux/SearchSlice';
 import ProductCard from "./ProductCard.jsx";
 import "./Products.css";
+import axios from 'axios';
 
 const Products = ({ items, cart, setCart }) => {
   const dispatch = useDispatch();
@@ -107,6 +108,13 @@ const Products = ({ items, cart, setCart }) => {
   const handlePriceChange = (event) => {
     setSelectedPriceRange(event.target.value);
   };
+  useEffect(()=>{
+    getProducts();
+  },[])
+  const getProducts = async () => {
+    const result=await axios.get("http://localhost:3001/admin/get")
+    console.log(result)
+  }
 
   const filterByPrice = (item) => {
     switch (selectedPriceRange) {

@@ -1,0 +1,136 @@
+/* 
+.checkout-page {
+    padding: 20px;
+    margin: 100px auto;
+    width: 50%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #0D315D;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input, select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0D315D;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+  }
+  
+  .submit-button:hover {
+    background-color: #0B2748;
+  }
+   */
+
+   /* Checkout.css */
+.checkout-page {
+    padding: 40px;
+    margin: 100px auto;
+    width: 60%;
+    background: linear-gradient(135deg, #f0f0f0, #ffffff);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.checkout-page:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #2C3E50;
+    margin-bottom: 30px;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+}
+
+p {
+    text-align: center;
+    color: #7F8C8D;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: #34495E;
+}
+
+input, select {
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 1px solid #BDC3C7;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    border-color: #3498DB;
+}
+
+.submit-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #3498DB;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+    align-self: center;
+}
+
+.submit-button:hover {
+    background-color: #2980B9;
+    transform: translateY(-3px);
+}
+
+.submit-button:active {
+    transform: translateY(1px);
+}

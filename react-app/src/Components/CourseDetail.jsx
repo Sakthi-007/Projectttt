@@ -24,7 +24,7 @@ const CourseDetail = () => {
       </div>
       <div className="course-detail-video">
         <iframe
-          src={`${product.videoUrl}`}  // Make sure to add videoId to your PRODUCTS data
+          src={`${product.videoUrl}`} 
           title={product.title}
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
